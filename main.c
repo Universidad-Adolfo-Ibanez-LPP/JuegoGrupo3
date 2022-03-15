@@ -243,7 +243,17 @@ void victoria(char m[3][3])
       return 2; //empate
 };
 
-void pantalla_final(char m[3][3])
-{
-
+void pantalla_final(char m[3][3]){
+     int j; 
+     system("cls");
+     j = victoria(m)
+     if(j==0){
+          printf("Ha ganado el jugador 1");
+     }    
+     else if(j==1){
+          printf("Ha ganado el jugador 2");
+     }
+     else{
+          printf("Han empatado!! Intentenlo de nuevo.");
+     }
 };
